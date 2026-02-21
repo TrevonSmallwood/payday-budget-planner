@@ -18,4 +18,4 @@ Deployed on AWS S3.
 - AWS S3 (hosted)
 
 ## Live Demo
-[Insert your AWS link here]
+http://payday-budget-planner.s3-website.us-east-2.amazonaws.com 
