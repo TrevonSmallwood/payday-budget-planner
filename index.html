@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Budget Planner</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>💰 Payday Budget Planner</h1>
+
+    <!-- Paycheck Input -->
+    <div class="card">
+      <h2>My Paycheck</h2>
+      <input type="number" id="paycheck" placeholder="Enter paycheck amount ($)" />
+    </div>
+
+    <!-- Bills Section -->
+    <div class="card">
+      <h2>Bills & Expenses</h2>
+      <div id="bills-list"></div>
+      <div class="add-row">
+        <input type="text" id="bill-name" placeholder="Bill name (e.g. Credit Card)" />
+        <input type="number" id="bill-amount" placeholder="Amount ($)" />
+        <button onclick="addBill()">+ Add</button>
+      </div>
+    </div>
+
+    <!-- Savings & Investments -->
+    <div class="card">
+      <h2>Savings & Investments</h2>
+      <div class="split-row">
+        <label>Savings ($)</label>
+        <input type="number" id="savings" placeholder="0" />
+      </div>
+      <div class="split-row">
+        <label>Investments ($)</label>
+        <input type="number" id="investments" placeholder="0" />
+      </div>
+    </div>
+
+    <!-- Fun Money -->
+    <div class="card">
+      <h2>Fun Money 🎉</h2>
+      <div class="split-row">
+        <label>Spending Money ($)</label>
+        <input type="number" id="fun" placeholder="0" />
+      </div>
+    </div>
+
+    <!-- Calculate Button -->
+    <button class="calc-btn" onclick="calculate()">Calculate My Budget</button>
+
+    <!-- Results -->
+    <div class="card result-card" id="results" style="display:none;">
+      <h2>Budget Breakdown</h2>
+      <div id="breakdown"></div>
+      <div id="leftover"></div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
